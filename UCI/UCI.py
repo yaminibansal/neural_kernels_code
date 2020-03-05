@@ -130,7 +130,7 @@ for idx, dataset in enumerate(sorted(os.listdir(datadir))):
     
 
     if classifier is Classifier.NTK:
-        C_LIST = [10.0 ** i for i in range(-3, 5)]
+        C_LIST = [2.0 ** i for i in range(-19, 20)]
         Ks = NTK.kernel_value_batch(X, MAX_DEP)
         best_acc = 0.0
         best_value = 0
